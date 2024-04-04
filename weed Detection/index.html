@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Detection</title>
+    <style>
+        /* Resetting default margin and padding */
+        /* Global styles */
+        /* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Content styles */
+.content {
+    padding: 30px;
+    margin: 20px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Decorative elements */
+.decorative-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: rotateBox 10s infinite linear;
+}
+
+.decorative-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 2px;
+    background-color: #333;
+    z-index: -1;
+}
+
+/* Keyframe animation */
+@keyframes rotateBox {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo1.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="upload.html">Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>WEED DETECTION</h1>
+        <p>Agriculture, essential for human sustenance, has faced challenges with the increasing population demanding higher productivity. Traditional methods like using cow dung as fertilizer sufficed in the past. However, the pursuit of higher profits led to the Green Revolution, marked by increased herbicide usage, causing environmental damage. To address this, we've implemented methods to reduce herbicide usage by detecting weed areas in field images using MATLAB. As land and resources diminish, precision agriculture gains prominence, with image processing offering solutions to optimize productivity sustainably.</p>
+    </div>
+    <!-- Decorative elements -->
+    <div class="decorative-box"></div>
+    <div class="decorative-line"></div>
+</body>
+</html>

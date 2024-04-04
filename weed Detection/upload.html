@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo1.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" id="uploadBtn">Upload Image</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>WEED DETECTION</h1>
+        <div id="uploadContainer" >
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="analyzeBtn">Analyze Image</button>
+        </div>
+        <div id="resultContainer" style="display:none;">
+            <h2>Analysis Result:</h2>
+            <div id="resultText"></div>
+        </div>
+        <div id="imagePreviewContainer" style="display:none;">
+            <h2>Uploaded Image:</h2>
+            <img id="imagePreview" src="#" alt="Uploaded Image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

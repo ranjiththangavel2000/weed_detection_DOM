@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('images.jpg'); /* Add your background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            overflow-y: auto; /* Enable vertical scroll if content exceeds max-height */
+            max-height: 300px; /* Initially show 2/3 of content */
+            transition: max-height 0.5s ease; /* Smooth transition */
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="logo1.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="upload.html" id="uploadBtn">Upload Image</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <h1>About</h1>
+        <p id="mainContent">Agriculture, essential for human sustenance, has faced challenges with the increasing population demanding higher productivity. Traditional methods like using cow dung as fertilizer sufficed in the past. However, the pursuit of higher profits led to the Green Revolution, marked by increased herbicide usage, causing environmental damage. To address this, we've implemented methods to reduce herbicide usage by detecting weed areas in field images using MATLAB. As land and resources diminish, precision agriculture gains prominence, with image processing offering solutions to optimize productivity sustainably.Agriculture, essential for human sustenance, has faced challenges with the increasing population demanding higher productivity. Traditional methods like using cow dung as fertilizer sufficed in the past. However, the pursuit of higher profits led to the Green Revolution, marked by increased herbicide usage, causing environmental damage. To address this, we've implemented methods to reduce herbicide usage by detecting weed areas in field images using MATLAB. As land and resources diminish, precision agriculture gains prominence, with image processing offering solutions to optimize productivity sustainably.</p>
+        <a href="#" class="btn" id="toggleBtn" onclick="toggleContent()">Learn More</a>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var mainContent = document.getElementById('mainContent');
+            var toggleBtn = document.getElementById('toggleBtn');
+
+            if (mainContent.style.maxHeight) {
+                mainContent.style.maxHeight = null;
+                toggleBtn.textContent = 'Learn More';
+            } else {
+                mainContent.style.maxHeight = 'none';
+                toggleBtn.textContent = 'Show Less';
+            }
+        }
+    </script>
+</body>
+</html>
